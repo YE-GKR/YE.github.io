@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'GmarketSans', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  video.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .overlay-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  nav, .center-text, .portfolio-section {
+    z-index: 1;
+    position: relative;
+  }
+  
+  nav {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+    transition: transform 0.4s ease-out;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20pt;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    font-size: 30pt;
+  }
+  
+  .center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50pt;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: transform 0.4s ease-out;
+  }
+  
+  .sub-text {
+    top: 79%;
+    left: 8%;
+    font-size: 15pt;
+    font-weight: 400;
+    position: absolute;
+    opacity: 0.85;
+  }
+  
+  .portfolio-section {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 16pt;
+  }
+  
